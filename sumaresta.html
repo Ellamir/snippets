@@ -23,10 +23,10 @@
                         <input id="valor2" type="text">
                     </div>
                     <div style="display: flex">
-                        <button id="btn-sumar" type="button">
+                        <button id="btn-sumar" type="button" onClick="sumar">
                             Sumar
                         </button>
-                        <button id="btn-restar" type="button">
+                        <button id="btn-restar" type="button" onClick="restar">
                             Restar
                         </button>
                     </div>
@@ -35,7 +35,16 @@
         </div>
     </div>
     <script>
-    // Escríbe aquí tu código
+    calcular.addEventListener('click',()=>{
+    let a = parseInt(document.getElementById('valor1').value);
+    let b = parseInt(document.getElementById('valor2').value);
+    let sumar = (a, b) => {return a + b;}
+    let restar = (a, b) => {return a - b;}
+    }
+    if restar=true {alert(sumar)};
+        else {alert=restar); 
+    
+ // prevent default?
     </script>
 </body>
 
